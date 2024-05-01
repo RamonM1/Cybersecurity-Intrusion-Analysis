@@ -1,53 +1,60 @@
-# Cybersecurity-Intrusion-Analysis
+# Cybersecurity Intrusion Analysis
 
-##Sprint 0 Deliverables
+## Sprint 0 Deliverables
 
-Group Name
-Intrusions
+### Group Name
+**Intrusions**
 
-##Group Members
+### Group Members
+- Zena
+- Ramon
+- Amarylis
+- Salman
 
-Zena, Ramon, Amarylis, Salman
+### Background Research
 
-##Background Research
+#### Relevant Articles/Publications:
+- [How to Make Malware Honeypot](https://intezer.com/blog/cloud-security/how-to-make-malware-honeypot/)
+- [Creating a Honeypot](https://medium.com/@ecojumper30/creating-a-honeypot-f2b4cc33385a)
 
-In bulleted format, what are some relevant articles or publications that frame your research question? Please include at least 5 relevant links.
+**Summary of Findings:**
+[Write your summary here]
 
-https://intezer.com/blog/cloud-security/how-to-make-malware-honeypot/
-https://medium.com/@ecojumper30/creating-a-honeypot-f2b4cc33385a
+### Problem Definition
 
-Write a summary of your findings below these bullet points
+**Exact Problem:** 
+Identify the origins and patterns of hack attempts through data analysis.
 
-##Problem Definition
+**Why Data?:** 
+Data is essential to understand where and when hack attempts occur, as well as to identify key features of intrusion attempts.
 
-What is the EXACT problem you are attempting to solve using data? Why do you need data to help you solve this problem?
+### Value
 
-Where do most hack attempts come from? 
-When do most hack attempts occur?
-What are signifying features of an attempted intrusion?
+**Value of Solving this Problem:**
+Enhanced cybersecurity measures, proactive threat detection, and mitigation strategies.
 
+### Limitations
 
+**Anticipated Limitations and Risks:**
+Incomplete or biased datasets, legal and ethical considerations, resource constraints.
 
-##Value
+### Solutions
 
-What is the value of solving this problem?
+**Addressing Risks:**
+- Thorough data validation and cleansing.
+- Adherence to legal and ethical guidelines.
+- Resource optimization by focusing on specific aspects of intrusion analysis.
 
-##Limitations
+### Datasets
 
-What limitations and risks do you anticipate in your project?
+**Selected Datasets:**
+[Specify datasets here]
 
-##Solutions
+### Database/Store Setup
 
-How do you plan to address these risks? Keep in mind that narrowing the scope of your project is an acceptable answer.
+**Description:**
+[Describe your database structure and setup process here]
 
-##Datasets
-	
-Which datasets will you use for this project? (Note: for some projects, staff will be directly providing the dataset)
+### GitHub Link
 
-##Database/Store Setup
-
-Describe the database you’ve created, as well as its structure.
-
-##GitHub Link
-
-Provide a link to your GitHub repository here. 
+[Provide a link to your GitHub repository here]
