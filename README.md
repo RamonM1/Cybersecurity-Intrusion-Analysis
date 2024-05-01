@@ -1,7 +1,5 @@
 # Cybersecurity Intrusion Analysis
 
-## Sprint 0 Deliverables
-
 ### Group Name
 **Intrusions**
 
