@@ -11,50 +11,16 @@
 - Amarylis
 - Salman
 
-### Background Research
+## Problem Definition
 
-#### Relevant Articles/Publications:
-- [How to Make Malware Honeypot](https://intezer.com/blog/cloud-security/how-to-make-malware-honeypot/)
-- [Creating a Honeypot](https://medium.com/@ecojumper30/creating-a-honeypot-f2b4cc33385a)
+The problem we are attempting to solve is pinpointing/summarizing identifying information regarding attempted hacks such as location, time, network, etc. We need data to help solve this problem because the more information we have on our attackers the better prepared we can be to prevent attempted intrusions going forward.
 
-**Summary of Findings:**
-[Write your summary here]
+The questions guiding our analysis are:
 
-### Problem Definition
+- Where do most hack attempts come from?
+- When do most hack attempts occur?
+- What are signifying features of an attempted intrusion?
 
-**Exact Problem:** 
-Identify the origins and patterns of hack attempts through data analysis.
+## Datasets
 
-**Why Data?:** 
-Data is essential to understand where and when hack attempts occur, as well as to identify key features of intrusion attempts.
-
-### Value
-
-**Value of Solving this Problem:**
-Enhanced cybersecurity measures, proactive threat detection, and mitigation strategies.
-
-### Limitations
-
-**Anticipated Limitations and Risks:**
-Incomplete or biased datasets, legal and ethical considerations, resource constraints.
-
-### Solutions
-
-**Addressing Risks:**
-- Thorough data validation and cleansing.
-- Adherence to legal and ethical guidelines.
-- Resource optimization by focusing on specific aspects of intrusion analysis.
-
-### Datasets
-
-**Selected Datasets:**
-[Specify datasets here]
-
-### Database/Store Setup
-
-**Description:**
-[Describe your database structure and setup process here]
-
-### GitHub Link
-
-[Provide a link to your GitHub repository here]
+We began our analysis by reviewing an example dataset. This allowed us to practice our approach to Exploratory Data Analysis (EDA) and familiarize ourselves with key cybersecurity terms while our TKH honeypot collected the data necessary for our actual analysis.
