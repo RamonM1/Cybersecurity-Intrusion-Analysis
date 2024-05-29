@@ -19,7 +19,7 @@ response = client.get_object(
 data = response['Body'].read()
 
 # transform into pandas dataframe by reading in bytes
-#df = pd.read_csv(io.BytesIO(data))
+df = pd.read_csv(io.BytesIO(data))
 
 # print head
 print(data.decode('utf-8'))
