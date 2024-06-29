@@ -1,15 +1,5 @@
-# Cybersecurity Intrusion Analysis
-
-### Group Name
-**Intrusions**
-
-### Group Members
-- Zena
-- Ramon
-- Amarylis
-- Salman
-
-## Problem Definition
+![](images/proj.png)
+![](images/problem.png)
 
 The problem we are attempting to solve is pinpointing/summarizing identifying information regarding attempted hacks such as location, time, network, etc. We need data to help solve this problem because the more information we have on our attackers the better prepared we can be to prevent attempted intrusions going forward.
 
@@ -19,11 +9,12 @@ The questions guiding our analysis are:
 - When do most hack attempts occur?
 - What are signifying features of an attempted intrusion?
 
-## Datasets
+
+![](images/datasets.png)
 
 We began our analysis by reviewing an example dataset. This allowed us to practice our approach to Exploratory Data Analysis (EDA) and familiarize ourselves with key cybersecurity terms while our TKH honeypot collected the data necessary for our actual analysis.
 
-## Setup
+![](images/setup.png)
 
 1. Pull repo into your work environment.
 2. Setup a virtual environment this can be done using virtualenv.
@@ -76,3 +67,6 @@ df = pd.read_csv(io.BytesIO(data))
 print(df)
 ```
 
+## Architecture
+
+![architecture](images/architecture.png)
