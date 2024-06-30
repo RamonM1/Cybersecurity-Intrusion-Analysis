@@ -14,7 +14,17 @@ The questions guiding our analysis are:
 
 We began our analysis by reviewing an example dataset. This allowed us to practice our approach to Exploratory Data Analysis (EDA) and familiarize ourselves with key cybersecurity terms while our TKH honeypot collected the data necessary for our actual analysis.
 
+After we recieved our raw data which landed in our S3 bucket there was a number of ETL operations that had to be done before it was clean enough for analysis and visualizations.
+
+The raw data from our honey pot did not have the columns we were expecting and also had mislabeled columns. Along with missing data and misformated data types that had to be resolved before preceeding to visualizations and modeling.
+
 ![](images/setup.png)
+
+The `notebooks` folder contains the eda and other jupyter notebooks for the project.
+
+The `code` folder contains functions written in order to interact with the S3 bucket to do things like extract, merge, pull and push data.
+
+The `images` folder contains images used in the readme and also visualizations like plots and graphs generated from jupyter notebooks.
 
 1. Pull repo into your work environment.
 2. Setup a virtual environment this can be done using virtualenv.
@@ -67,6 +77,31 @@ df = pd.read_csv(io.BytesIO(data))
 print(df)
 ```
 
-## Architecture
+![architecturetitle](images/arch.png)
 
 ![architecture](images/architecture.png)
+
+The honeypot is setup using docker using a docker image from [tpotce](https://github.com/telekom-security/tpotce?tab=readme-ov-file). The raw data collected from the honey pot than lands in a S3 bucket. Afterwards extract load and transformations happen using AWS glue studio. Later stored in a data store in AWS athena.
+
+After the data has been cleaned the data is visualized in tableau which can be found [here](https://public.tableau.com/app/profile/salman8177/viz/CyberIntrusions/Dashboard1?publish=yes).
+
+![](images/tableau.png)
+
+![](images/conclusion.png)
+
+Once the data was cleaned by resolving issues with the raw data collected from the honey pot. The visualizations revealed that United States, Russia and China are the countries commiting majority of the cyber attacks.
+
+Another key insight from the data is that thursday seems to be the weekday that most countries launch cyber attacks. 
+
+In regards to patterns of attack its all over the place and there is no overall consistent time in the day that countries attack. However generally attacks seem to happen later in the afternoon in EST. 
+
+Interesting enough majority of the attacks were aimed towards cyber security tools like Pof which is a tool to fingerprint passive traffic. The second being Suricata which is a network security monitoring engine. 
+
+![](images/challenges.png)
+
+Some of the challenges faced during the process of this project included data cleaning. Due to not having access to our raw data we used a placeholder dataset for our initial exploratory data analysis. However the columns we were expecting did not match the ones that we recieved and thus had to modify our eda.
+
+Another area that blocked progress was permissions in AWS. Figuring out how to setup credentials without exposing them and also have different AWS services talk to each other was a learning step for this project. Along with using glue studio for our ETL and understanding the advantages of the tools provided by glue studio.
+
+Future next steps can be a machine learning model that can be used to predict some target feature in the dataset using some secondary data source like a news soruce.
+
